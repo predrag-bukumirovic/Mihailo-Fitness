@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,800;0,900;1,600&display=swap");
+
+:root {
+  --primary: #00c7c0;
+  --secondary: #fdfdfd;
+  --color-white: #fff;
+  --color-light: #d8d8d8;
+  --color-input: #303134;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  animation: transitionIn 1.7s;
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* NotFound start */
+.notfound-container {
+  position: absolute;
+  background: var(--primary);
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+}
+.notfound-text {
+  background: white;
+  width: 70%;
+  margin: 100px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+.notfound-text h4 {
+  font-size: 200px;
+  margin: 0;
+}
+.notfound-text h5 {
+  font-size: 60px;
+  margin: 0;
+  text-align: center;
+}
+.notfound-text p {
+  font-size: 40px;
+  text-align: center;
+}
+
+@media (max-width: 930px) {
+  .notfound-text h4 {
+    font-size: 100px;
+  }
+  .notfound-text h5 {
+    font-size: 30px;
+  }
+  .notfound-text p {
+    font-size: 20px;
+  }
+}
+/* NotFound end */
+
+.no-scroll {
+  overflow: hidden;
+}
+
+input::placeholder {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+}

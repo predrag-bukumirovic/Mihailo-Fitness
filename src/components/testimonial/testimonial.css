@@ -1,0 +1,62 @@
+.container-testimonial {
+  padding: 30px;
+  width: 70%;
+  margin: 0 auto;
+}
+.person-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.person1 {
+  background-image: url("./img/img1.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.person2 {
+  background-image: url("./img/img2.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.person3 {
+  background-image: url("./img/img3.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.person4 {
+  background-image: url("./img/img4.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.person5 {
+  background-image: url("./img/img5.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.person6 {
+  background-image: url("./img/img6.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.container-testimonial p {
+  font-size: 16px;
+}
+.light .control-arrow {
+  background: #f0f0f0 !important;
+}
+
+@media (max-width: 765px) {
+  .container-testimonial {
+    width: 100%;
+  }
+  .container-testimonial p {
+    font-size: 13px;
+  }
+  .container-testimonial h3 {
+    font-size: 16px;
+  }
+}

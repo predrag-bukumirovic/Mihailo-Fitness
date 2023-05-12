@@ -1,0 +1,86 @@
+.menu-background {
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 9999;
+}
+.menu-background.active {
+  width: 100%;
+  transition: 0.2s;
+}
+.menu {
+  background: #fff;
+  width: 280px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: -100%;
+  z-index: 9999999;
+}
+
+.menu.active {
+  right: 0;
+  z-index: 99999;
+  transition: 0.4s;
+}
+
+.MuiSvgIcon-root {
+  font-size: 30px !important;
+  cursor: pointer;
+}
+.logo-close-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #c9c9c9;
+}
+
+.menu ul {
+  margin: 50px 0;
+  font-size: 18px;
+  padding-inline-start: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+ul {
+  padding-inline-start: 20px;
+}
+ul a li {
+  list-style: none;
+  padding-left: 20px;
+}
+.menu ul a {
+  text-decoration: none;
+  color: #000;
+  width: 100%;
+  padding: 12px 0;
+  transition: 0.2s;
+}
+ul a:hover {
+  background: var(--secondary);
+}
+.network {
+  margin-left: 20px;
+}
+
+.network a i {
+  font-size: 30px;
+  margin-right: 20px;
+  color: #000;
+}
+
+@media (max-width: 350px) {
+  .menu {
+    width: 70%;
+  }
+}
+
+@media (max-width: 700px) {
+  .menu ul a {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,25 @@
+@import "../../global.css";
+
+.go-up {
+  position: fixed;
+  bottom: 50px;
+  width: 30px;
+  height: 40px;
+  display: block;
+  border-radius: 20px;
+  text-align: center;
+  right: 50px;
+  margin-left: -13px;
+  cursor: pointer;
+  z-index: 99;
+}
+.go-up img {
+  transform: rotate(180deg);
+}
+
+.go-up .fa {
+  color: var(--primary);
+  -webkit-animation: goDown 1s ease infinite;
+  animation: goDown 1s ease infinite;
+  font-size: 25px !important;
+}

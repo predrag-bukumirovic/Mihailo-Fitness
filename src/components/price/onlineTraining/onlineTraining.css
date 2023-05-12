@@ -1,0 +1,58 @@
+@import "../../../global.css";
+/* ---------- Page onlineTraining start ---------- */
+.online-image {
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+  width: 80%;
+}
+.online-image img {
+  width: 100%;
+}
+.form-online-training input {
+  width: 40%;
+  padding: 10px 0 10px 5px;
+}
+select {
+  display: block;
+  width: 15%;
+  padding: 5px 0 5px 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 5px 0 10px 0;
+}
+.theme-input {
+  margin: 20px 0 0 0;
+}
+.change {
+  font-size: 12px;
+  color: var(--primary);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media (max-width: 1000px) {
+  .online-image img {
+    width: 100%;
+  }
+  .form-online-training input {
+    width: 50% !important;
+  }
+}
+@media (max-width: 780px) {
+  .online-image {
+    width: 90%;
+    margin: 30px auto;
+  }
+  .online-image img {
+    width: 100%;
+  }
+  .form-online-training input {
+    width: 80% !important;
+  }
+}
+/* ---------- Page onlineTraining end ---------- */

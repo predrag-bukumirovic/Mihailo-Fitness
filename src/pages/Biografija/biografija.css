@@ -1,0 +1,21 @@
+@import "../../global.css";
+
+.container-biography {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 20px;
+  margin-top: 20px;
+}
+.info h3 {
+  margin-top: 0 !important;
+}
+
+.biography-img img {
+  width: 300px;
+  border-radius: 5px;
+}
+.info {
+  width: 700px;
+}
