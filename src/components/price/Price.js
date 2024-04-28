@@ -25,9 +25,7 @@ export default function Price() {
               </div>
               <div className="text">
                 <p>- Uživo trening sa trenerom u teretani</p>
-                <p>- Cena za 12 termina (na mesečnom nivou) </p>
                 <p>- Trening traje 1h</p>
-                <p>- Teretana i kardio</p>
                 <p>- Konsultacije sa trenerom</p>
               </div>
               <Button
@@ -52,7 +50,6 @@ export default function Price() {
               </div>
               <div className="text">
                 <p>- Plan i program treninga</p>
-                <p>- Cena na mesečnom nivou</p>
                 <p>- Praćenje napretka</p>
                 <p>- Konstantna podrška trenera</p>
                 <p>- Konsultacije sa trenerom online</p>

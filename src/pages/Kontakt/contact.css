@@ -19,14 +19,27 @@ textarea {
   width: 97%;
   outline: none;
   font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #9e9e9e;
   padding: 10px 0 10px 5px;
   margin: 5px 0 0 0;
 }
 textarea::placeholder {
   font-family: "Roboto", sans-serif;
+  font-size: 14px;
 }
 .label-box {
   margin-top: 20px;
+}
+select {
+  width: 99%;
+  padding: 10px 0 10px 5px;
+  margin: 5px 0 0 0;
+  cursor: pointer;
+  font-size: 16px;
+  outline: none;
+  border-radius: 10px;
+  border: 1px solid #9e9e9e;
 }
 textarea {
   resize: none;
@@ -59,4 +72,38 @@ iframe {
 }
 .MuiSnackbarContent-root {
   background: var(--primary) !important;
+}
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 15px;
+  height: 15px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  margin: 3px 0 0 10px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(.5, 0, .5, 1) infinite;
+  border-color: #000 transparent transparent transparent;
+}
+
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+button:disabled,
+button[disabled] {
+  background-color: #b0b0b0 !important;
+  color: #666666;
 }

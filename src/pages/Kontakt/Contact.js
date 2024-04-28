@@ -1,34 +1,159 @@
 import * as React from "react";
 import { Helmet } from "react-helmet";
-import emailjs from "emailjs-com";
 import "./contact.css";
 import { Submit, Title } from "../../global";
 import { Snackbar, Slide, IconButton } from "@material-ui/core";
+import { useState } from "react";
 
 function Contact() {
-  const [open, setOpen] = React.useState(false);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [services, setServices] = useState("");
+  const [message, setMessage] = useState("");
 
-  //Send email start
-  function sendEmail(event) {
-    event.preventDefault();
-    emailjs
-      .sendForm(
-        "service_wmtdkul",
-        "template_b8rdk0b",
-        event.target,
-        "fJ6s2lZ-3_8CYIreA"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          setOpen(true);
+  const [open, setOpen] = React.useState(false);
+  const [loading, setLoading] = useState(false);  
+
+  const submitForm = async e => {
+    e.preventDefault();
+
+    const emailTemplate = `
+      <html>
+        <head>
+          <style>
+            body {
+              font-family: Arial, sans-serif;
+              color: #333333;
+            }
+
+            * {
+              box-sizing: border-box;
+            }
+
+            .container {
+              width: 100%;
+              max-width: 600px;
+              margin: 0 auto;
+              padding: 20px;
+              background-color: #f5f5f5;
+            }
+
+            p {
+              font-size: 16px;
+              margin: 0 0 10px;
+            }
+
+            a {
+              color: #0066cc;
+              text-decoration: underline;
+            }
+
+    
+            .section {
+              margin-bottom: 40px;
+            }
+
+            .section-heading {
+              font-size: 20px;
+              font-weight: bold;
+              margin: 0 0 10px;
+            }
+
+            .section-content {
+              font-size: 16px;
+              margin: 0;
+            }
+
+            /* Stilovi za dugme */
+            .button {
+              display: inline-block;
+              padding: 10px 20px;
+              background-color: #0066cc;
+              color: #ffffff;
+              text-decoration: none;
+              border-radius: 5px;
+            }
+
+            .button:hover {
+              background-color: #004f9f;
+            }
+
+            .header {
+              background-color: #ffffff;
+              padding: 20px;
+              text-align: center;
+            }
+
+            .footer {
+              background-color: #f5f5f5;
+              padding: 20px;
+              text-align: center;
+            }
+
+            .logo {
+              width: 100%;
+              margin: 0 auto;
+            }
+
+            @media only screen and (max-width: 600px) {
+              .container {
+                padding: 10px;
+              }
+            }
+
+            .message-box {
+              padding: 30px;
+            }
+
+            .policy {
+              color: #ffa500 !important;
+            }
+          </style>
+        </head>
+
+        <body>
+          <div class="container">
+            <div class="header">
+              <img src='https://www.mihailo-fitness.rs/static/media/logo2.3c8d5fa4.png' alt="Logo" class="logo">
+            </div>
+            <div class="section">
+              <b>Name:</b> <p>${name}</p>
+              <b>Email:</b> <p>${email}</p>
+              <b>Position:</b> <p>${services}</p>
+              <p class="message-box"><b><Message:></b> ${message}</p>
+            </div>
+            <div class="footer">
+              <p>© Mihailo Živanović | Sva prava zadržana.</p>
+            </div>
+          </div>
+        </body>
+      </html>
+    `;
+
+    try {
+      await fetch("/contact.php", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
         },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-    event.target.reset();
-  } //Send email end
+        body: JSON.stringify({
+          name: name,
+          email: email,
+          message: emailTemplate
+        })
+      });
+
+      setLoading(true);
+      setTimeout(() => {
+        setLoading(false);
+        setOpen(true);
+        document.getElementById("form").reset();
+      }, 3000);
+    } catch (e) {
+      console.error(e);
+      setLoading(false);
+    }
+  };
 
   const closeAlertMessage = () => {
     setOpen(false);
@@ -44,12 +169,13 @@ function Contact() {
         <Title>Kontakt</Title>
 
         <div className="contact-map">
-          <form onSubmit={sendEmail}>
+          <form onSubmit={submitForm}>
             <label htmlFor="fullName">Ime i Prezime</label>
             <span className="star"> *</span>
             <input
+              onChange={event => setName(event.target.value)}
               type="text"
-              name="fullName"
+              name="name"
               placeholder="Vaše ime i prezime..."
               required
             />
@@ -57,6 +183,7 @@ function Contact() {
               <label htmlFor="email">Email</label> <span className="star"> *</span>
             </div>
             <input
+              onChange={event => setEmail(event.target.value)}
               type="email"
               name="email"
               placeholder="Vaša email adresa..."
@@ -64,13 +191,30 @@ function Contact() {
             />
 
             <div className="label-box">
+              <label htmlFor="email">Usluga <span className="star"> *</span></label>
+            </div>
+            <select onChange={event => setServices(event.target.value)} required>
+              <option value="">Izaberite uslugu:</option>
+              <option value="Uživo trening">Uživo trening</option>
+              <option value="Online trening">Online trening</option>
+              <option value="Plan ishrane">Plan ishrane</option>
+            </select>
+
+            <div className="label-box">
               <lebel htmlFor="message">Poruka</lebel>
               <span className="star"> *</span>
             </div>
-            <textarea name="message" placeholder="Vaša poruka..." required />
+            <textarea onChange={event => setMessage(event.target.value)} name="message" placeholder="Vaša poruka..." required />
             <IconButton style={{ padding: 0, marginTop: 30 }}>
-              <Submit title="Pošalji poruku i stupi u kontakt sa trenerom">
-                Pošalji poruku
+              <Submit disabled={loading} title="Pošalji poruku i stupi u kontakt sa trenerom">
+                {loading ? "Slanje... " : "Pošalji "}
+                {loading &&
+                  <div class="lds-ring">
+                    <div />
+                    <div />
+                    <div />
+                    <div />
+                  </div>}
               </Submit>
             </IconButton>
           </form>
