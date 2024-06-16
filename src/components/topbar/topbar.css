@@ -7,7 +7,7 @@
   justify-content: space-between;
   align-items: center;
   transition: 0.6s;
-  background-color: var(--secondary);
+  background-color: #fff;
   z-index: 99;
   top: 0;
 }
@@ -41,16 +41,13 @@
   justify-content: space-between;
   cursor: pointer;
 }
-.burger-menu .line-medium {
-  height: 4px;
-  width: 30px;
-  background: var(--primary);
-}
+
 .burger-menu .line {
-  height: 4px;
+  height: 2px;
   width: 40px;
-  background: #000; 
+  background: #000;
 }
+
 @media (max-width: 400px) {
   .topbar-box {
     width: 100%;

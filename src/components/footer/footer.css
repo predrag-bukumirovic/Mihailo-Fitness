@@ -1,48 +1,63 @@
 .footer {
   border-top: 1px solid var(--secondary);
+  background: #fff;
+  margin-top: 50px;
+  padding: 30px;
 }
-.footer .dCfRds {
-  margin: 0 auto;
-  background-color: var(--color-white);
-}
+
 .container-footer {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   padding-top: 20px;
 }
 
-.location,
+.info-footer > span {
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.info-footer ul {
+  line-height: 30px;
+  padding-inline-start: 0;
+}
+.info-footer ul li {
+  list-style: none;
+}
+
+.info-footer ul li a {
+  color: #000;
+  text-decoration: none;
+}
+
 .phone-number,
 .email {
   display: flex;
   align-items: center;
-  padding: 0.5rem;
-  padding-top: 0;
+  line-height: 30px;
   font-size: 0.9rem;
-  font-weight: 500;
+}
+
+.phone-number {
+  margin-top: 20px;
 }
 
 .phone-number a,
-.location a,
 .email a {
   color: inherit;
   text-decoration: none;
-  margin-left: 15px;
   display: flex;
   align-items: center;
 }
 .info-text {
   margin-left: 10px;
 }
-.about-footer {
-  width: 400px;
-  margin-left: 25px;
-}
+
 .about-footer img {
   width: 120px;
 }
+
 .network .youtube i:hover {
   color: red;
   transition: 0.3s;
@@ -57,17 +72,26 @@
 }
 .copyright {
   text-align: center;
-  padding: 1.5rem 0.5rem;
-  border-top: 1px solid var(--secondary);
+  padding: 20px;
+  background: #fff;
   font-size: 13px;
 }
 @media (max-width: 790px) {
   .container-footer {
-    justify-content: start;
+    display: block;
+    text-align: center;
   }
+
+  .phone-number,
+  .email {
+    display: flex;
+    justify-content: center;
+  }
+
   .info-footer {
-    margin-bottom: 20px;
+    margin-top: 50px;
   }
+
   .copyright {
     font-size: 13px;
   }

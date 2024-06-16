@@ -20,10 +20,11 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.h1`
-  font-size: 25px;
+  font-size: 40px;
   text-align: center;
   margin: 0 auto;
-  font-weight: 500;
+  margin-bottom: 50px;
+  font-weight: bold;
   text-transform: uppercase;
   border-bottom: 1px solid var(--primary);
   width: max-content;
@@ -97,13 +98,17 @@ export const ButtonA = styled.a`
 
 export const MenuNav = styled.div`
   background: #fff;
-  width: 280px;
+  width: 400px;
   position: fixed;
   top: 0;
   bottom: 0;
   right: -130%;
   z-index: 9999999;
   transition: 0.2s;
+
+  @media (max-width: 900px) {
+    width: 100%;
+  }
 `;
 
 // Global functions

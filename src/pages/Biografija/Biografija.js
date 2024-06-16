@@ -23,9 +23,7 @@ function Biografija() {
       </Helmet>
       <div className="biography-wrapper">
         <Title style={{ marginTop: "30px" }}>
-          Personalni trener
-          <br />
-          Mihailo Živanović
+          Biografija
         </Title>
 
         <div className="container-biography">

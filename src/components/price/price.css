@@ -8,11 +8,13 @@
   flex-wrap: wrap;
   justify-content: space-between;
   width: 80%;
+  gap: 30px;
   margin: 20px auto 0 auto;
 }
 .price-package .content .box {
-  width: 320px;
-  padding: 10px;
+  width: 350px;
+  background: #fff;
+  border-radius: 20px;
   margin: 0 auto;
 }
 .price-package .content .box .inner .price-tag {
@@ -21,6 +23,7 @@
   background: var(--primary);
   color: #ffffff;
   text-align: center;
+  border-radius: 20px 20px 0 0;
   font-weight: 200;
   position: relative;
 }
@@ -29,7 +32,7 @@
   font-weight: 500;
 }
 .price-package .content .box .inner .text {
-  padding: 30px 15px;
+  padding: 20px 15px;
   text-align: center;
   height: 157px;
 }
@@ -37,8 +40,19 @@
   display: flex;
   justify-content: center;
 }
+.price-package .content .box {
+  position: relative;
+}
+.price-package .content .box .btn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 10px;
+  margin: 0 10px 10px 10px;
+  right: 0;
+}
 .price-package .content .box .inner .text p {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 20px;
   margin: 0;
   text-align: start;
@@ -52,14 +66,14 @@
   height: 100%;
 }
 
-.sale {
+/* .sale {
   background: red;
   position: absolute;
   top: 0;
   left: 0;
   width: 50px;
   border-radius: 0 0 20px 0;
-}
+} */
 
 /* ---------- Page Price end ---------- */
 @media (max-width: 700px) {
@@ -80,7 +94,6 @@
 @media (max-width: 800px) {
   .price-package .content .box {
     max-width: 290px;
-    padding: 15px;
     margin: 0 auto;
   }
   .price-package .content .box .inner .text {

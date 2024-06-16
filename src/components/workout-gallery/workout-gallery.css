@@ -1,8 +1,4 @@
 .gallery .content {
-  /* -webkit-display: flex;
-  display: flex;
-  flex-wrap: wrap;*/
-  margin-top: 30px;
   -webkit-columns-count: 1;
   -moz-columns-count: 1;
   column-count: 2;
@@ -18,15 +14,7 @@
 }
 .gallery .content .box img {
   width: 190%;
-  margin-top: 50px;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-.gallery .content .box img:hover {
-  -webkit-filter: grayscale(0%);
-  filter: grayscale(0%);
+  margin-bottom: 20px;
 }
 
 @media (max-width: 750px) {

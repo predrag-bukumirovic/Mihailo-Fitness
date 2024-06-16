@@ -1,31 +1,16 @@
 import React from "react";
 import "./footer.css";
 import Logo from "../../components/images/logo2.png";
-import { Container } from "../../global";
+import {Container} from '../../global'
 
 function Footer() {
   return (
     <>
       <div className="footer">
-        <Container>
+
+        <Container style={{marginTop: 0}}>
           <div className="container-footer">
-            <div className="info-footer">
-              <div className="location">
-              </div>
-              <div className="phone-number">
-                <a href="tel:060-073-7363">
-                  <i className="uil uil-phone"></i>
-                  <span className="info-text">+381 600737363</span>
-                </a>
-              </div>
-              <div className="email">
-                <a href="mailto: mihailofitness@gmail.com">
-                  <i className="uil uil-envelope"></i>
-                  <span className="info-text">mihailofitness@gmail.com</span>
-                </a>
-              </div>
-            </div>
-            <div className="about-footer">
+              <div className="about-footer">
               <img src={Logo} alt="Footer slika" />
               <div className="network">
                 <a
@@ -47,8 +32,36 @@ function Footer() {
                 </a>
               </div>
             </div>
+
+            <div className="info-footer">
+              <span>Mapa sajta</span>
+              <ul>
+                <li><a href="/">Početna</a></li>
+                <li><a href="/biografija">Biografija</a></li>
+                <li><a href="/trening-uzivo">Uživo trening</a></li>
+                <li><a href="/online-trening">Online trening</a></li>
+                <li><a href="/plan-ishrane">Plan ishrane</a></li>
+                <li><a href="/kontakt">Kontakt</a></li>
+              </ul>
+            </div>
+
+            <div className="info-footer">
+              <span>Kontakt</span>
+              <div className="phone-number">
+                <a href="tel:060-073-7363">
+                  <i className="uil uil-phone"></i>
+                  <span className="info-text">+381 600737363</span>
+                </a>
+              </div>
+              <div className="email">
+                <a href="mailto: mihailofitness@gmail.com">
+                  <i className="uil uil-envelope"></i>
+                  <span className="info-text">mihailofitness@gmail.com</span>
+                </a>
+              </div>
+            </div>
           </div>
-        </Container>
+          </Container>
       </div>
 
       <div className="copyright">

@@ -7,6 +7,10 @@
   margin: 30px;
 }
 
+.dietPlan-image img {
+  border-radius: 30px;
+}
+
 @media (max-width: 1000px) {
   .dietPlan-image img {
     width: 100%;

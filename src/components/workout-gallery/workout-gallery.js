@@ -12,7 +12,7 @@ export default function WorkoutGallery() {
     <div className="gallery-container">
       <Container>
         <section className="gallery" id="gallery">
-          <Title>Galerija vežbanja</Title>
+          <Title>Galerija</Title>
 
           <div className="content">
             <div className="box wow slideInLeft">

@@ -19,3 +19,9 @@
 .info {
   width: 700px;
 }
+
+@media (max-width: 1040px) {
+  .info {
+    margin-top: 30px;
+  }
+}

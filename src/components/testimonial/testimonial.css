@@ -2,6 +2,8 @@
   padding: 30px;
   width: 70%;
   margin: 0 auto;
+  background: #fff;
+  border-radius: 40px;
 }
 .person-img {
   width: 90px;

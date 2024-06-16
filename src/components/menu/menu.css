@@ -34,7 +34,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: #c9c9c9;
+  color: #000;
+  font-size: 30px;
 }
 
 .menu ul {
@@ -56,15 +57,14 @@ ul a li {
 .menu ul a {
   text-decoration: none;
   color: #000;
+  font-size: 30px;
+  font-weight: bold;
   width: 100%;
   padding: 12px 0;
   transition: 0.2s;
 }
 ul a:hover {
   background: var(--secondary);
-}
-.network {
-  margin-left: 20px;
 }
 
 .network a i {
@@ -75,12 +75,19 @@ ul a:hover {
 
 @media (max-width: 350px) {
   .menu {
-    width: 70%;
+    width: 100%;
   }
 }
 
 @media (max-width: 700px) {
-  .menu ul a {
-    font-size: 20px;
+  .menu-link {
+    text-align: center;
+  }
+
+  .menu-link a li {
+    padding-left: 0;
+  }
+  .network {
+    text-align: center;
   }
 }

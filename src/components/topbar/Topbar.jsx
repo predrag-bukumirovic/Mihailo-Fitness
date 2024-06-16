@@ -23,9 +23,9 @@ function Topbar({ menuOpen, setMenuOpen }) {
         <div className="menu-mode">
           <div onClick={() => setMenuOpen(!menuOpen)}>
             <div onClick={bodyScroll} className="burger-menu">
-              <div className="line"></div>
-              <div className="line-medium"></div>
-              <div className="line"></div>
+              <div className="line" />
+              <div className="line" />
+              <div className="line" />
             </div>
           </div>
         </div>
