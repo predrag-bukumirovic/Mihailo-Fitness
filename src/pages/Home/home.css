@@ -2,7 +2,7 @@
 
 .container-slide {
   padding: 0;
-  margin: 110px 0 0 0 !important;
+  margin: 65px 0 0 0 !important;
 }
 
 .home {
@@ -67,9 +67,6 @@
   }
   .wpb-text h2 {
     font-size: 25px;
-  }
-  .container-slide {
-    margin-top: 90px !important;
   }
 
   .bg h1 {
