@@ -1,7 +1,7 @@
 import React from "react";
 import "./price.css";
-import imgPlanIshrane from "../images/plan-ishrane.jpg";
-import imgOnline from "../images/online-trening1.jpg";
+import imgPlanIshrane from "../images/plan-ishrane.jpeg";
+import imgOnline from "../images/online-trening1.jpeg";
 import imgLive from "../images/uzivo-trening-img.jpeg";
 import { Button, Container, Title } from "../../global";
 import scrollTopPage from "../../global";

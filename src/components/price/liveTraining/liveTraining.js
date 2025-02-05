@@ -71,10 +71,9 @@ export default function LiveTraining() {
       <div className="text">
         <p>
           Treninzi se održavaju u {""}
-          <a className="link-blue" href="https://goo.gl/maps/ptAjdqiu5ZUGwSJX9">
-            Non Stop Fitness - Big Fashion Park.
+          <a className="link-blue" target="_blank" href="https://maps.app.goo.gl/3GKRGbX24zaTXY8g9" rel="noreferrer">
+            Planet Gym & Fitness.
           </a>
-          , ali postoji mogućnost kroz dogovor da neki treninzi budu i na drugim lokacijama Non Stop Fitness teretana.
         </p>
       </div>
 

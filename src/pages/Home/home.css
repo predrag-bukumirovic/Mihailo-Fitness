@@ -2,7 +2,6 @@
 
 .container-slide {
   padding: 0;
-  margin: 65px 0 0 0 !important;
 }
 
 .home {
@@ -26,33 +25,33 @@
 
 .bg div {
   width: 850px;
+  position: inherit;
+  bottom: 100px;
+  text-align: center;
 }
 
 .bg h1 {
-  font-size: 70px;
+  font-size: 50px;
   font-weight: 600;
   margin: 0;
 }
 
 .bg p {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .bg a {
   background: var(--primary);
-  padding: 15px 60px;
+  padding: 10px 60px;
   border-radius: 50px;
+  font-weight: 500;
   text-decoration: none;
-  color: #fff;
+  color: #000;
 }
 .slide-bar img {
   width: 100%;
   object-fit: cover;
   height: 90vh;
-}
-
-.mobile-img {
-  display: none;
 }
 
 @media (max-width: 950px) {
@@ -85,16 +84,12 @@
     font-size: 16px;
     font-weight: bold;
   }
-  .big-img {
-    display: none;
+
+  .bg h1 {
+    font-size: 28px;
   }
-  .mobile-img {
-    display: block;
-    width: 100%;
-  }
-  .mobile-img img {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
+
+  .bg p {
+    font-size: 14px;
   }
 }

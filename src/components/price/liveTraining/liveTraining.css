@@ -5,12 +5,13 @@
   display: flex;
   justify-content: center;
   margin: 30px auto;
-  width: 100%;
+  width: 400px;
   object-fit: cover;
 }
 
 .live-image img {
   border-radius: 30px;
+  width: 100%;
 }
 .text-price p {
   font-size: 18px;

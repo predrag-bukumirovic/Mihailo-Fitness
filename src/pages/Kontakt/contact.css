@@ -5,11 +5,21 @@ h2 {
   text-align: center;
 }
 
+.contact-map {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
 .container-form {
   margin: 150px auto 0 auto;
+}
+.contact-map iframe {
   width: 500px;
 }
+
 form {
+  width: 500px;
   padding: 10px;
   margin-top: 50px;
 }
@@ -58,6 +68,18 @@ iframe {
 }
 @media (max-width: 415px) {
   .container-form {
+    width: 100%;
+  }
+}
+@media (max-width: 1000px) {
+  .contact-map {
+    flex-direction: column;
+  }
+  form {
+    width: 97%;
+  }
+
+  .contact-map iframe {
     width: 100%;
   }
 }

@@ -1,6 +1,6 @@
 .footer {
   border-top: 1px solid var(--secondary);
-  background: #fff;
+  background: #121f33;
   margin-top: 50px;
   padding: 30px;
 }
@@ -16,6 +16,7 @@
 .info-footer > span {
   font-size: 23px;
   font-weight: bold;
+  color: #fff;
 }
 
 .info-footer ul {
@@ -27,8 +28,13 @@
 }
 
 .info-footer ul li a {
-  color: #000;
+  color: #fff;
   text-decoration: none;
+}
+
+.info-footer ul li a:hover {
+  color: var(--primary);
+  background: none;
 }
 
 .phone-number,
@@ -37,6 +43,7 @@
   align-items: center;
   line-height: 30px;
   font-size: 0.9rem;
+  color: #fff;
 }
 
 .phone-number {
@@ -50,31 +57,34 @@
   display: flex;
   align-items: center;
 }
-.info-text {
-  margin-left: 10px;
-}
 
 .about-footer img {
-  width: 120px;
+  margin-bottom: 40px;
+}
+.instagram {
+  background: #fff;
+  border-radius: 30px;
+  padding: 10px 30px;
+  font-size: 13px;
+  text-decoration: none;
+  color: #121f33;
+  font-weight: 500;
 }
 
-.network .youtube i:hover {
-  color: red;
-  transition: 0.3s;
+.instagram:hover {
+  background: var(--primary);
 }
-.network .facebook i:hover {
-  color: #2222f7;
-  transition: 0.3s;
-}
-.network .instagram i:hover {
-  color: #e77313;
-  transition: 0.3s;
-}
+
 .copyright {
   text-align: center;
   padding: 20px;
-  background: #fff;
+  background: #121f33;
+  color: #fff;
   font-size: 13px;
+}
+
+.copyright a {
+  color: var(--primary);
 }
 @media (max-width: 790px) {
   .container-footer {

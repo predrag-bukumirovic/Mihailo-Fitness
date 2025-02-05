@@ -1,7 +1,6 @@
 import React from "react";
 import "./home.css";
-import homeMobile from "../../components/images/img3.jpeg";
-import homeImg4 from "../../components/images/img5.png";
+import homeImg4 from "../../components/images/homeImage.jpg";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Price from "../../components/price/Price";
 import WorkoutGallery from "../../components/workout-gallery/workout-gallery";
@@ -24,10 +23,6 @@ function Home() {
     
               <div className="slide-bar">
                 <img className="big-img" src={homeImg4} alt="Slika Home 1" />
-              </div>
-
-              <div className="mobile-img">
-                <img src={homeMobile} alt="Slika Home 2" />
               </div>
           </section>
         </div>

@@ -55,15 +55,14 @@ function Menu({ menuOpen, setMenuOpen }) {
           </ul>
 
           <div className="network">
-            <a className="facebook" href="https://www.facebook.com/mihailo.zivanovic.52">
-              <i className="uil uil-facebook-f" />
-            </a>
-            <a className="instagram" href="https://www.instagram.com/mihailo_zivanovic/">
-              <i className="uil uil-instagram" />
-            </a>
-            <a className="youtube" href="https://www.youtube.com/channel/UCfGF4m7p6MomOmigQ2BFvfg">
-              <i className="uil uil-youtube" />
-            </a>
+         
+
+            <a href="https://www.instagram.com/mihailo_zivanovic/">
+              Instagram
+            </a> <br/>
+            
+            <a href="tel:+381600737363">Pozovi me</a>
+
           </div>
         </MenuNav>
       </div>

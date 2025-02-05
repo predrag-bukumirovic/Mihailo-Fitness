@@ -218,6 +218,13 @@ function Contact() {
               </Submit>
             </IconButton>
           </form>
+
+          <iframe
+            title="Lokacija gde se treninzi odrzavaju"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.1762266427077!2d20.507385111944266!3d44.81797437620261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7af44cea18ff%3A0x764c4be0e6b85a71!2sPlanet%20Gym%20%26%20Fitness!5e0!3m2!1sen!2srs!4v1738781154463!5m2!1sen!2srs"
+            allowFullScreen=""
+            loading="lazy"
+          />
         </div>
 
         <Snackbar
@@ -236,12 +243,7 @@ function Contact() {
           }
         />
       </div>
-      <iframe
-        title="Lokacija gde se treninzi odrzavaju"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d176.89135209689906!2d20.512929207340232!3d44.8162343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7af351097a59%3A0x6469d9b04e43748b!2sNon%20Stop%20Fitness%20Serbia!5e0!3m2!1sen!2srs!4v1627217827693!5m2!1sen!2srs"
-        allowFullScreen=""
-        loading="lazy"
-      />
+      
     </>
   );
 }

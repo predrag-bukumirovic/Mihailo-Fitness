@@ -1,7 +1,7 @@
 .gallery .content {
   -webkit-columns-count: 1;
   -moz-columns-count: 1;
-  column-count: 2;
+  column-count: 4;
   -webkit-column-width: 50%;
   -moz-column-width: 50%;
   column-width: 50%;
@@ -20,6 +20,7 @@
 @media (max-width: 750px) {
   .gallery .content {
     flex-wrap: wrap;
+    column-count: 2;
   }
   .gallery .content .box {
     flex: 0 0 100%;

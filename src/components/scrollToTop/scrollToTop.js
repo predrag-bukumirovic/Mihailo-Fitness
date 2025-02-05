@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./scrollToTop.css";
-import ScrollTopIcon from "../images/arrow.png";
+
 
 class GoTop extends Component {
   state = {
@@ -23,7 +23,7 @@ class GoTop extends Component {
         <>
           <a href="#top">
             <span className="go-up" onClick={this.scrollToTop}>
-              <img src={ScrollTopIcon} alt="Scroll slika" />
+              Gore
             </span>
           </a>
         </>

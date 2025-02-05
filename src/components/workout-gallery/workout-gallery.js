@@ -1,10 +1,10 @@
 import React from "react";
 import "./workout-gallery.css";
-import img1 from "../images/img5.jpg";
+import img1 from "../images/img5.jpeg";
 import img2 from "../images/img2.jpeg";
 import img3 from "../images/img3.jpeg";
-import img4 from "../images/img4.jpg";
-import img5 from "../images/img6.jpg";
+import img4 from "../images/img4.jpeg";
+import img5 from "../images/img6.jpeg";
 import { Container, Title } from "../../global";
 
 export default function WorkoutGallery() {

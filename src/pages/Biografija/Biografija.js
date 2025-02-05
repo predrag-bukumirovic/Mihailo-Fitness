@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import Img from "../../components/images/miha5.jpg";
+import Img from "../../components/images/img4.jpeg";
 import { Container, Title } from "../../global";
 import "./biografija.css";
 

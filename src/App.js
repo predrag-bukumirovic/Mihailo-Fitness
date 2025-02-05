@@ -13,6 +13,7 @@ import liveTraining from "./components/price/liveTraining/liveTraining";
 import GoTop from "./components/scrollToTop/scrollToTop";
 import NotFound from "./pages/NotFound/NotFound";
 import ReactGa from "react-ga";
+import CallButton from "./components/CallButton";
 
 function App() {
   //Google analytics start
@@ -41,6 +42,7 @@ function App() {
         <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <GoTop />
+        <CallButton/>
 
         <Switch>
           <Route exact path="/" component={Home} />

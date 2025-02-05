@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Submit, Title } from "../../../global";
 import "./dietPlan.css";
-import dietPlanBigImg from "../../images/plan-ishrane.jpg";
+import dietPlanBigImg from "../../images/plan-ishrane.jpeg";
 import { Helmet } from "react-helmet";
 
 export default function DietPlan() {

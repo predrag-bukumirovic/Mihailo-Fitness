@@ -1,6 +1,6 @@
 import React from "react";
 import "./topbar.css";
-import logo from "../images/logo2.png";
+import logo from "../images/Mihailo.svg";
 import scrollTopPage from "../../global";
 
 function Topbar({ menuOpen, setMenuOpen }) {
@@ -23,7 +23,6 @@ function Topbar({ menuOpen, setMenuOpen }) {
         <div className="menu-mode">
           <div onClick={() => setMenuOpen(!menuOpen)}>
             <div onClick={bodyScroll} className="burger-menu">
-              <div className="line" />
               <div className="line" />
               <div className="line" />
             </div>

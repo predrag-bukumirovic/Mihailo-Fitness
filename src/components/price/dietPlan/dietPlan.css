@@ -9,6 +9,7 @@
 
 .dietPlan-image img {
   border-radius: 30px;
+  width: 1000px;
 }
 
 @media (max-width: 1000px) {

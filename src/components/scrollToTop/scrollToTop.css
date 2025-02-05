@@ -2,19 +2,16 @@
 
 .go-up {
   position: fixed;
-  bottom: 50px;
-  width: 30px;
-  height: 40px;
-  display: block;
+  bottom: 40px;
+  background: var(--primary);
+  display: flex;
+  color: #000;
   border-radius: 20px;
   text-align: center;
-  right: 50px;
-  margin-left: -13px;
+  padding: 10px;
+  right: 20px;
   cursor: pointer;
   z-index: 99;
-}
-.go-up img {
-  transform: rotate(180deg);
 }
 
 .go-up .fa {

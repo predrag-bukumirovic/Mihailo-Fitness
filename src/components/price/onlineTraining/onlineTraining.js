@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Submit, Title } from "../../../global";
 import "./onlineTraining.css";
-import onlineImage from "../../images/online-trening-Big.jpg";
+import onlineImage from "../../images/online-trening1.jpeg";
 import { Helmet } from "react-helmet";
 import "../../../global";
 

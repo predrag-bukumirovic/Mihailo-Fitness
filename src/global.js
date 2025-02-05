@@ -34,67 +34,41 @@ export const Title = styled.h1`
   }
 `;
 
-export const Submit = styled.button`
-  padding: 10px 40px;
-  background: var(--primary);
-  color: #ffffff;
-  text-decoration: none;
-  display: inline-block;
-  border: 1px solid transparent;
-  cursor: pointer;
-  font-size: 16px;
-  border-radius: 20px;
+export const Submit = styled.button`padding: 10px 40px;
+         background: var(--primary);
+         color: #000;
+         font-weight: bold;
+         text-decoration: none;
+         display: inline-block;
+         border: 1px solid transparent;
+         cursor: pointer;
+         font-size: 16px;
+         border-radius: 20px;
 
-  :hover {
-    border-color: #222222;
-    color: #222222;
-    background: transparent;
-    transition: all 0.8s ease;
-  }
-`;
+         :hover {
+           background:#9db500;
+           transition: all 0.8s ease;
+         }`;
 
-export const Button = styled.a`
-  padding: 10px 40px;
-  background: var(--primary);
-  color: #ffffff;
-  text-decoration: none;
-  display: inline-block;
-  border: 1px solid transparent;
-  font-size: 16px;
-  cursor: pointer;
-  margin-top: 10px;
-  border-radius: 20px;
+export const Button = styled.a`padding: 10px 40px;
+         background: var(--primary);
+         color: #000;
+         font-weight: bold;
+         text-decoration: none;
+         display: inline-block;
+         border: 1px solid transparent;
+         font-size: 16px;
+         cursor: pointer;
+         margin-top: 10px;
+         border-radius: 20px;
 
-  :hover {
-    border-color: #222222;
-    color: #222222;
-    background: transparent;
-    transition: all 0.8s ease;
-  }
-  :active {
-    background: var(--primary);
-  }
-`;
-
-export const ButtonA = styled.a`
-  padding: 10px 40px;
-  background: var(--primary);
-  color: #ffffff;
-  text-decoration: none;
-  display: inline-block;
-  border: 1px solid transparent;
-  font-size: 16px;
-  cursor: pointer;
-  margin-top: 10px;
-  border-radius: 5px;
-
-  :hover {
-    border-color: #222222;
-    color: #222222;
-    background: transparent;
-    transition: all 0.8s ease;
-  }
-`;
+         :hover {
+           background: #9db500;
+           transition: all 0.8s ease;
+         }
+         :active {
+           background: var(--primary);
+         }`;
 
 export const MenuNav = styled.div`
   background: #fff;
