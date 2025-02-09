@@ -104,17 +104,13 @@ function Contact() {
             .message-box {
               padding: 30px;
             }
-
-            .policy {
-              color: #ffa500 !important;
-            }
           </style>
         </head>
 
         <body>
           <div class="container">
             <div class="header">
-              <img src='https://www.mihailo-fitness.rs/static/media/logo2.3c8d5fa4.png' alt="Logo" class="logo">
+              <img src='http://www.mihailo-fitness.rs/static/media/Mihailo.adac3302.svg' alt="Logo" class="logo">
             </div>
             <div class="section">
               <b>Name:</b> <p>${name}</p>

@@ -1,9 +1,10 @@
 .container-testimonial {
-  padding: 30px;
-  width: 70%;
+  padding: 40px;
+  width: 100%;
   margin: 0 auto;
-  background: #fff;
+  background: #121f33;
   border-radius: 40px;
+  color: #fff;
 }
 .person-img {
   width: 90px;
@@ -45,10 +46,12 @@
 }
 
 .container-testimonial p {
-  font-size: 16px;
+  font-size: 18px;
+  font-style: italic;
 }
-.light .control-arrow {
-  background: #f0f0f0 !important;
+
+.carousel.carousel-slider .control-arrow:hover {
+  background: none;
 }
 
 @media (max-width: 765px) {

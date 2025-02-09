@@ -4,10 +4,10 @@
   padding: 5px 0 0 0;
 }
 .price-package .content {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   justify-content: space-between;
-  width: 80%;
+  width: 100%;
   gap: 30px;
   margin: 20px auto 0 auto;
 }
@@ -70,6 +70,9 @@
 
 /* ---------- Page Price end ---------- */
 @media (max-width: 700px) {
+  .price-package .content {
+    justify-content: center;
+  }
   .price-tag {
     font-size: 18px !important;
   }

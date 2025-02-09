@@ -1,9 +1,4 @@
 @import "../../global.css";
-h2 {
-  font-size: 40px;
-  font-weight: 100;
-  text-align: center;
-}
 
 .contact-map {
   display: flex;
@@ -29,15 +24,17 @@ textarea {
   flex-direction: column;
   width: 97%;
   outline: none;
-  font-size: 16px;
+  font-size: 18px;
   border-radius: 10px;
   border: none;
   padding: 10px 0 10px 10px;
   margin: 5px 0 0 0;
 }
-textarea::placeholder {
+textarea::placeholder,
+input::placeholder {
   font-family: "Roboto", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
+  color: #a1a0a0;
 }
 .label-box {
   margin-top: 20px;

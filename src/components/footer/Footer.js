@@ -37,14 +37,14 @@ function Footer() {
             <div className="info-footer">
               <span>Kontakt</span>
               <div className="phone-number">
-                <a href="tel:060-073-7363">
+                <a href="tel:+381600737363">
 
-                  <span className="info-text">+381 600737363</span>
+                  <span className="info-text">+381600737363</span>
                 </a>
               </div>
               <div className="email">
-                <a href="mailto: mihailofitness@gmail.com">
-                  <span className="info-text">mihailofitness@gmail.com</span>
+                <a href="mailto:info@mihailo-fitness.rs">
+                  <span className="info-text">info@mihailo-fitness.rs</span>
                 </a>
               </div>
             </div>
