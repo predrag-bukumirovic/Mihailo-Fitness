@@ -6,7 +6,7 @@ import img3 from "../images/img3.jpeg";
 import img4 from "../images/img4.jpeg";
 import img5 from "../images/img6.jpeg";
 import img6 from "../images/img7.jpeg";
-import img7 from "../images/homeImage.jpg";
+import img7 from "../images/homeImage.png";
 import { Container, Title } from "../../global";
 
 const images = [img1, img2, img3, img4, img5, img6, img7];

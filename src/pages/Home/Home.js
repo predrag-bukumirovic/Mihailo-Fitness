@@ -1,6 +1,6 @@
 import React from "react";
 import "./home.css";
-import homeImg4 from "../../components/images/homeImage.jpg";
+import homeImg4 from "../../components/images/homeImage.png";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Price from "../../components/price/Price";
 import WorkoutGallery from "../../components/workout-gallery/workout-gallery";
