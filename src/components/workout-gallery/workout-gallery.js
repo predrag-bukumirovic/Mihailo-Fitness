@@ -74,32 +74,7 @@ export default function WorkoutGallery() {
                 &#10095;
               </span>
             </div>}
-
-          {/* <div className="content">
-            <div className="box wow slideInRight">
-              <img src={img4} alt="gallery" />
-            </div>
-            <div className="img-big box wow slideInLeft">
-              <img src={img7} alt="gallery" />
-            </div>
-            <div className="box wow slideInLeft">
-              <img src={img1} alt="gallery" />
-            </div>
-
-            <div className="box wow slideInRight">
-              <img src={img2} alt="gallery" />
-            </div>
-
-            <div className="box wow slideInLeft">
-              <img src={img3} alt="gallery" />
-            </div>
-            <div className="box wow slideInLeft">
-              <img src={img5} alt="gallery" />
-            </div>
-            <div className="box wow slideInLeft">
-              <img src={img6} alt="gallery" />
-            </div>
-          </div> */}
+            
         </section>
       </Container>
     </div>;
