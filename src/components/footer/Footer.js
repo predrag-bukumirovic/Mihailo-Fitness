@@ -56,11 +56,11 @@ function Footer() {
         © Mihailo Živanović 2021. | by&nbsp;
         <a
           className="link-blue"
-          href="https://www.gold-digital.rs"
+          href="https://www.brandone.rs/"
           target="_blank"
           rel="noreferrer"  
         >
-          Gold Digital Agency
+          Brand One
         </a>
       </div>
     </>
